@@ -1,0 +1,85 @@
+#company-name {
+  font-family: Roboto, sans-serif;
+  letter-spacing: 5px;
+  font-size: 28px;
+}
+
+@media (max-width: 767px) {
+  .move-left-xs-sm-md {
+    margin-left: 19px;
+  }
+}
+
+#my-nav .nav-link:hover, #company-name:hover {
+  color: rgb(163,211,255) !important;
+}
+
+#my-nav .nav-link:active, #company-name:active {
+  color: rgb(163,211,255) !important;
+}
+
+#navcol-1 ul li a {
+  color: white;
+}
+
+#navcol-1 ul li a:hover {
+  color: #a2cce3 !important;
+}
+
+.navigation-clean {
+  background: #fff;
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  color: #333;
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
+  margin-bottom: 0;
+}
+
+@media (min-width:768px) {
+  .navigation-clean {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+.navigation-clean .navbar-brand {
+  font-weight: bold;
+  color: inherit;
+}
+
+.navigation-clean .navbar-brand:hover {
+  color: #222;
+}
+
+.navigation-clean .navbar-toggler {
+  border-color: #ddd;
+}
+
+.navigation-clean .navbar-toggler:hover, .navigation-clean .navbar-toggler:focus {
+  background: none;
+}
+
+.navigation-clean .navbar-toggler {
+  color: #888;
+}
+
+.navigation-clean .navbar-collapse, .navigation-clean .form-inline {
+  border-top-color: #ddd;
+}
+
+.navigation-clean.navbar .navbar-nav .nav-link {
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.navigation-clean.navbar-light .navbar-nav .nav-link {
+  color: #465765;
+}
+
+.navigation-clean.navbar-light .navbar-nav .nav-link:focus, .navigation-clean.navbar-light .navbar-nav .nav-link:hover {
+  color: #37434d !important;
+  background-color: transparent;
+}
+
