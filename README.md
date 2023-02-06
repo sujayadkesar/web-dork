@@ -3,7 +3,7 @@
 &nbsp;
 Are you tired of manually searching for vulnerabilities in websites? Want a faster and more efficient solution? Introducing Web-Dorks 🔍 - your one-stop tool for finding vulnerabilities in websites.
 
-[web-dork](https://sujayadkesar.github.io/web-dork)
+[https://sujayadkesar.github.io/web-dork](https://sujayadkesar.github.io/web-dork)
 &nbsp;
 &nbsp;
 &nbsp;
