@@ -62,7 +62,7 @@ table{
     padding: 5px;
     border-radius: 5px;
     border: none;
-    background-color: rgba(42, 87, 107, 1);
+    background-color: rgb(2, 126, 250);
     color: white;
     font-size: 16px;
     cursor: pointer;
@@ -71,9 +71,9 @@ table{
   }
   
   input[type="submit"]:hover {
-    background-color: white;
+    background-color: rgb(69, 139, 185);
     color: rgba(42, 87, 107, 1);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.2);
   }
   
 
