@@ -6,7 +6,7 @@
 body{
     background-color: #0d0030;
 }
-.searchcontainer{
+/* .searchcontainer{
     left: 50%; 
     bottom: 50%;
     transform: translate(-50%,50%);
@@ -22,7 +22,7 @@ table{
 .searchcontainer input{
     width: 400px;
     padding: 10px;
-    /* padding: 0 10px; */
+     padding: 0 10px;
     border: none;
     outline: none;
     background-color: transparent;
@@ -32,10 +32,50 @@ table{
 }
 .searchcontainer input::placeholder{
     color: white;
-}
+} */
 .searchcontainer i{
     cursor: pointer;
 }
+
+.searchcontainer {
+    display: inline-block; /* flex*/
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+  }
+  
+  table {
+    border: none;
+  }
+  
+  input[type="text"] {
+    padding: 5px;
+    width: 300px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+    margin-right: 10px;
+  }
+  
+  input[type="submit"] {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(42, 87, 107, 1);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: white;
+    color: rgba(42, 87, 107, 1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+  }
+  
 
 
 #myBtn {
@@ -58,3 +98,29 @@ table{
     background-color: #555;
   }
 
+  .ribbon {
+    background-color: #a00;
+    overflow: hidden;
+    white-space: nowrap;
+    position: absolute;
+    right: -50px;
+    top: 40px;
+    transform: rotate(45deg);
+    box-shadow: 0 0 10px #888;
+  }
+  
+  .ribbon a {
+    border: 1px solid #faa;
+    color: #fff;
+    display: block;
+    font: bold 81.25% "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 1px 0;
+    padding: 10px 50px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 0 5px #444;
+  }
+
+  .ribbon a:hover{
+    color: black;
+  }

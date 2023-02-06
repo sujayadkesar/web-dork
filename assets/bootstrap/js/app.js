@@ -1,27 +1,29 @@
 const input = document.getElementById("domain");
 const form = document.querySelector('form');
-const revereip = document.getElementById("l1");
-const shodan = document.getElementById("link2");
-const github = document.getElementById("link3");
-const loginpages = document.getElementById("link4");
-const secheader = document.getElementById("link5");
-const waybackmachine = document.getElementById("link6");
-const ssltest = document.getElementById("link7");
-const wordpresssearch = document.getElementById("link8");
-const wordpresscontents = document.getElementById("link9");
-const whatcms = document.getElementById("link10");
-const pastbin = document.getElementById("link11");
-const stackoverflow = document.getElementById("link12");
-const s3buckets = document.getElementById("link13");
-const subdomains = document.getElementById("link14");
-const phpinfo = document.getElementById("link15");
-const backupfiles = document.getElementById("link16");
-const configlogfiles = document.getElementById("link17");
-const certsh = document.getElementById("link18");
-const directorylisting = document.getElementById("link19");
-const passwordfiles = document.getElementById("link20");
-const robots = document.getElementById("link21");
-const openredirect = document.getElementById("open");
+
+
+const revereip = document.getElementById("l1");             //done2
+const shodan = document.getElementById("link2");            //done2
+const github = document.getElementById("link3");            //done2
+const loginpages = document.getElementById("link4");        //done2
+const secheader = document.getElementById("link5");         //done2
+const waybackmachine = document.getElementById("link6");    //done2
+const ssltest = document.getElementById("link7");           //done2
+const wordpresssearch = document.getElementById("link8");   //done2
+const wordpresscontents = document.getElementById("link9"); //done2 
+const whatcms = document.getElementById("link10");          //done2
+const pastbin = document.getElementById("link11");          //done2
+const stackoverflow = document.getElementById("link12");    //done2
+const s3buckets = document.getElementById("link13");        //done2
+const subdomains = document.getElementById("link14");       //done2
+const phpinfo = document.getElementById("link15");          //done2
+const backupfiles = document.getElementById("link16");      //done2
+const configlogfiles = document.getElementById("link17");   //done2
+// const certsh = document.getElementById("link18");
+const directorylisting = document.getElementById("directory1"); //done1
+const passwordfiles = document.getElementById("passwd1");   //done1
+const robots = document.getElementById("robot1");         //done1
+const openredirect = document.getElementById("open1");   //done1
 
 
 form.addEventListener('submit', function(event) {
@@ -32,7 +34,7 @@ form.addEventListener('submit', function(event) {
   loginpages.href = `https://www.google.com/search?q=site:${input.value} inurl:login | inurl:signin | intitle:Login | intitle: signin | inurl:auth`;
   secheader.href = `https://securityheaders.com/?q=${input.value}&followRedirects=on`;
   waybackmachine.href = `https://web.archive.org/web/*/${input.value}/*`;
-  ssltest.href = `https://www.ssllabs.com/ssltest/analyze.html?d=${input.value}`;
+  ssltest.href = `https://www.ssllabs.com/ssltest/analyze.html?d=${input.value}&latest`;
   wordpresssearch.href = `http://wwwb-dedup.us.archive.org:8083/cdx/search?url=${input.value}/&matchType=domain&collapse=digest&output=text&fl=original,timestamp&filter=urlkey:.*wp[-].*&limit=1000000&xx=`;
   wordpresscontents.href = `https://google.com/search?q=site:${input.value} inurl:wp- | inurl:wp-content | inurl:plugins | inurl:uploads | inurl:themes | inurl:download`;
   whatcms.href = `https://whatcms.org/?s=${input.value}`;
@@ -43,7 +45,7 @@ form.addEventListener('submit', function(event) {
   phpinfo.href = `https://google.com/search?q=site:${input.value} ext:php intitle:phpinfo 'published by the PHP Group'`;
   backupfiles.href = `https://www.google.com/search?q=site:${input.value} ext:bkf | ext:bkp | ext:bak | ext:old | ext:backup`;
   configlogfiles.href =  `https://www.google.com/search?q=site:${input.value} ext:xml | ext:conf | ext:cnf | ext:reg | ext:inf | ext:rdp | ext:cfg | ext:txt | ext:ora | ext:ini | ext:log`;
-  certsh.href =  `https://crt.sh/?q=${input.value}`;
+  // certsh.href =  `https://crt.sh/?q=${input.value}`;
   directorylisting = `https://www.google.com/search?q=site:${input.value} intitle:index.of  | 'parent directory'`;
   passwordfiles = `https://www.google.com/search?q=site:${input.value} 'password' filetype:doc | filetype:pdf | filetype:docx | filetype:xls | filetype:dat | filetype:log`;
   robots.href = `https://www.google.com/search?q=${input.value}+robots.txt`;
